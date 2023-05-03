@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "dfactory"
+version = "0.1.0"
+description = "This module contain dynamic implementations of factory pattern"
+authors = ["Wojciech Bogobowicz <wojciech.bogobowicz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
