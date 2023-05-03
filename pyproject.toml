@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dfactory"
+name = "dynamic_factory"
 version = "0.1.0"
 description = "This module contain dynamic implementations of factory pattern"
 authors = ["Wojciech Bogobowicz <wojciech.bogobowicz@gmail.com>"]
@@ -8,7 +8,7 @@ license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-
+dynamic_factory = "*"
 
 [build-system]
 requires = ["poetry-core"]

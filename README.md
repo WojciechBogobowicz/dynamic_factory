@@ -12,7 +12,7 @@
 
 # Overview
 
-`fcatory` is package for dynamic implementations of factory pattern. Currently it has implemented only one class. `FuncFactory` that is designed to work with functions.
+`dynamic_factory` is package for dynamic implementations of factory pattern. Currently it has implemented only one class. `FuncFactory` that is designed to work with functions.
 
 # Usage tutorial
 
@@ -57,7 +57,7 @@ After that functions will be visible from factory.
 
 ```python
 # ./src1.py
-from dfactory import FuncFactory
+from dynamic_factory import FuncFactory
 
 
 @FuncFactory.register()
@@ -80,7 +80,7 @@ def unregistered_func(arg):
     print(f"greetings from src1 unregistered_func with arg {arg}")
     
 # ./src2.py
-from dfactory import FuncFactory
+from dynamic_factory import FuncFactory
 
 
 @FuncFactory.register(alias="src2_func1")
@@ -96,7 +96,7 @@ To create factory simply initialize `FuncFactory` object.
 
 
 ```python
-from dfactory import FuncFactory
+from dynamic_factory import FuncFactory
 import src1
 import src2
 
