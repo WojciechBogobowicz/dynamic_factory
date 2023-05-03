@@ -1,6 +1,7 @@
 # Table of content
 - [Table of content](#table-of-content)
 - [Overview](#overview)
+- [Installation](#installation)
 - [Usage tutorial](#usage-tutorial)
     - [Setup](#setup)
     - [Quick start](#quick-start)
@@ -10,9 +11,20 @@
 - [Limitations](#limitations)
 - [ToDo](#todo)
 
-# Overview
+# Overview 	  
+`dynamic_factory` is package for dynamic implementations of factory pattern. Currently it has implemented only one class. `FuncFactory` that is designed to work with functions. Project repo can be found on [github page]( https://github.com/WojciechBogobowicz/dynamic_factory) and package can be found on [pypi page]( https://pypi.org/project/dynamic-factory/#limitations ).
 
-`dynamic_factory` is package for dynamic implementations of factory pattern. Currently it has implemented only one class. `FuncFactory` that is designed to work with functions.
+
+
+# Installation
+Via pip:
+```bash
+pip install dynamic-factory
+```
+Via poetry:
+```bash
+poetry add dynamic-factory
+```
 
 # Usage tutorial
 

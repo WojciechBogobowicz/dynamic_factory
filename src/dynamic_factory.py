@@ -3,11 +3,9 @@ from typing import Iterable, Union, Callable
 from dataclasses import dataclass
 import warnings
 
-from config import DEFAULT_GROUP_NAME
-
 
 __all__ = ["FuncFactory"]
-
+DEFAULT_GROUP_NAME = "DEFAULT"
 
 class FuncFactory:
     """Dynamic implementation of factory design pattern,

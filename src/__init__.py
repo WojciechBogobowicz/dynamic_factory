@@ -1,1 +1,4 @@
-from dynamic_factory import *
+import sys
+sys.path.append(".")
+
+from src.dynamic_factory import *
