@@ -59,6 +59,17 @@ class FuncFactory:
         """
         return self._registry[alias](*args, **kwargs)
 
+    def get(self, alias: str) -> Callable:
+        """Return function that is stored with given alias.
+
+        Args:
+            alias (str): fuction alias or name.
+
+        Returns:
+            Callable: Stored function
+        """
+        return self._registry[alias]
+
     def _load_registry(self, modules) -> dict[str, Callable]:
         """Load all registered functions and store them as dict.
 
