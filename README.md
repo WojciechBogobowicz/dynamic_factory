@@ -7,8 +7,8 @@
     - [Groups](#groups)
     - [Functions with arguments](#functions-with-arguments)
     - [Aliases](#aliases)
-    - [Limitations](#limitations)
-    - [ToDo](#todo)
+- [Limitations](#limitations)
+- [ToDo](#todo)
 
 # Overview
 
@@ -172,10 +172,10 @@ func2_factory.execute("func_two", arg=123)
 ### Aliases
 Default alias for function is its name. but if you prefer it is possible to change it during registration process with `alias` param. Sometimes it is necessary like in `./src2.py:func1` because it has the same name as `./src1.py:func1`, so without alias those functions would overwrite each other. 
 
-### Limitations
+# Limitations
 Current implementation is adding field to functions that store record metadata, keep it in mind if you would do some advanced function manipulations like iteration trough `func.__dict__`
 
-### ToDo
+# ToDo
 - [ ] Warn user if he have the same alias for two different functions.
 - [ ] implement `__getitem__` that will access to factory function by alias.
 
